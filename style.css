@@ -1,8 +1,8 @@
-/Styles généraux du site/
+/* Styles généraux du site */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6; /fond gris clair/
-    color: #333333;            /texte gris foncé/
+    background-color: #f4f7f6; /* Un fond gris très clair et moderne */
+    color: #333333;            /* Un texte gris foncé, plus doux que le noir */
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,22 +11,23 @@ body {
     justify-content: center;
     min-height: 100vh;
 }
-/Style de l'en-tête (Header)/
+
+/* Style de l'en-tête (Header) */
 header {
-    background-color: #1e293b; /bleu nuit/
-    color: #ffffff;            /Texte en blanc/
+    background-color: #1e293b; /* Un bleu nuit élégant */
+    color: #ffffff;            /* Texte en blanc */
     width: 100%;
     max-width: 600px;
     padding: 30px;
     text-align: center;
-    border-radius: 10px 10px 0 0; /Arrondit les coins du haut/
+    border-radius: 10px 10px 0 0; /* Arrondit les coins du haut */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
    }
-/Style bouton CV dans le header/
+/* Style du bouton CV dans le header */
 .bouton-cv {
     display: inline-block;
     margin-top: 15px;
-    background-color: #3b82f6; /Bleu vif/
+    background-color: #3b82f6; /* Bleu vif pour attirer l'œil */
     color: #ffffff;
     text-decoration: none;
     padding: 10px 20px;
@@ -35,106 +36,123 @@ header {
     font-weight: 600;
     transition: background-color 0.2s, transform 0.2s;
 }
+
 .bouton-cv:hover {
-    background-color: #2563eb; /Bleufoncé/
-    transform: scale(1.03); /Légère animation de zoom/
+    background-color: #2563eb; /* Bleu un peu plus foncé au survol */
+    transform: scale(1.03); /* Légère animation de zoom */
 }
+
 header h1 {
     margin: 0 0 10px 0;
     font-size: 2rem;
 }
+
 header p {
     margin: 0;
-    color: #cbd5e1; /bleu clair (sous-titre)/
+    color: #cbd5e1; /* Un bleu-gris clair pour le sous-titre */
 }
-/Style du contenu principal (Main)/
+
+/* Style du contenu principal (Main) */
 main {
-    background-color: #ffffff; /Fond blanc/
+    background-color: #ffffff; /* Fond blanc pour faire ressortir le texte */
     width: 100%;
     max-width: 600px;
     padding: 30px;
     box-sizing: border-box;
-    border-radius: 0 0 10px 10px; /Arrondit les coins du bas/
+    border-radius: 0 0 10px 10px; /* Arrondit les coins du bas */
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
+
 main h2 {
     color: #1e293b;
-    border-bottom: 2px solid #3b82f6; /ligne bleue (sous le titre)/
+    border-bottom: 2px solid #3b82f6; /* Une jolie ligne bleue sous le titre */
     padding-bottom: 8px;
     margin-top: 0;
 }
+
 main p {
-    line-height: 1.6; /Espace entre les lignes/
+    line-height: 1.6; /* Espace un peu les lignes pour faciliter la lecture */
 }
-/Styles pour la section Projets/
+/* Styles pour la section Projets */
 .section-projets {
     margin-top: 30px;
 }
+
 .grille-projets {
     display: flex;
     flex-direction: column;
-    gap: 20px; /Espace entre les cartes/
+    gap: 20px; /* Espace entre les cartes */
     margin-top: 15px;
 }
-/Style de la carte projet/
+
+/* Style de la carte projet */
 .carte-projet {
     border: 1px solid #e2e8f0;
     border-radius: 8px;
-    overflow: hidden; /Empêche l'image de dépasser des bords arrondis/
+    overflow: hidden; /* Empêche l'image de dépasser des bords arrondis */
     background-color: #ffffff;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-/Effet de survol sur la carte/
+
+/* Effet de survol sur la carte */
 .carte-projet:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
-/Image du projet/
+
+/* Image du projet */
 .image-projet {
     width: 100%;
     height: 180px;
-    object-fit: cover; /Adapte l'image sans la déformer/
-    background-color: #cbd5e1; /Fond gris si l'image est manquante/
+    object-fit: cover; /* Adapte l'image sans la déformer */
+    background-color: #cbd5e1; /* Fond gris si l'image est manquante */
 }
-/Texte à l'intérieur de la carte/
+
+/* Texte à l'intérieur de la carte */
 .contenu-projet {
     padding: 20px;
 }
+
 .contenu-projet h3 {
     margin: 0 0 10px 0;
     color: #1e293b;
 }
+
 .contenu-projet p {
     font-size: 0.95rem;
     color: #64748b;
     margin: 0 0 20px 0;
 }
-/Bouton / Lien du projet/
+
+/* Bouton / Lien du projet */
 .lien-projet {
     display: inline-block;
-    background-color: #3b82f6; /Bouton bleu/
+    background-color: #3b82f6; /* Bouton bleu */
     color: #ffffff;
-    text-decoration: none; /Supprime le soulignement/
+    text-decoration: none; /* Supprime le soulignement */
     padding: 10px 20px;
     border-radius: 6px;
     font-size: 0.9rem;
     font-weight: 600;
     transition: background-color 0.2s;
 }
+
 .lien-projet:hover {
-    background-color: #2563eb; /Bleu foncé/
-}/Styles pour la section Contact/
+    background-color: #2563eb; /* Bleu plus foncé au survol */
+}/* Styles pour la section Contact */
 .section-contact {
     margin-top: 40px;
     text-align: center;
 }
+
 .liens-contact {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin-top: 20px;
 }
-/Style de base des boutons de contact/
+
+/* Style de base des boutons de contact */
 .bouton-contact {
     display: inline-block;
     text-decoration: none;
@@ -145,18 +163,22 @@ main p {
     transition: background-color 0.2s, transform 0.2s;
     color: #ffffff;
 }
-/Bouton Email (Couleur foncée)/
+
+/* Bouton Email (Couleur foncée) */
 .bouton-contact.email {
     background-color: #0f172a;
 }
+
 .bouton-contact.email:hover {
     background-color: #1e293b;
     transform: translateY(-2px);
 }
-/Bouton LinkedIn/
+
+/* Bouton LinkedIn (Bleu LinkedIn officiel) */
 .bouton-contact.linkedin {
     background-color: #0077b5;
 }
+
 .bouton-contact.linkedin:hover {
     background-color: #005987;
     transform: translateY(-2px);
