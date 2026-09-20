@@ -14,8 +14,8 @@ body {
 
 /* Style de l'en-tête (Header) */
 header {
-    background-color: #1e293b; /* Un bleu nuit élégant */
-    color: #ffffff;            /* Texte en blanc */
+    background-color: #1e293b; /* fond en-tête */
+    color: #ffffff;            /* couleur texte */
     width: 100%;
     max-width: 600px;
     padding: 30px;
