@@ -20,7 +20,7 @@ header {
     max-width: 600px;
     padding: 30px;
     text-align: center;
-    border-radius: 10px 10px 0 0; /* Arrondit les coins du haut */
+    border-radius: 10px 10px 0 0; /* Arrondir la bordure */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
    }
 /* Style du bouton CV dans le header */
